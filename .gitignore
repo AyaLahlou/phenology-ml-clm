@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Data and Models
+data/
+models/
+
+# Environment
+.env
+*.env
+*.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
