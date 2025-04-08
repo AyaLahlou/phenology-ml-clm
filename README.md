@@ -43,5 +43,5 @@ This project is released under [Your License Here].
 
 ## Acknowledgments
 
-This project is supported by [Your Institution / NCAR / NSF or other orgs].  
+This project is supported by [LEAP NSF STC](https://github.com/leap-stc/）, Columbia University,and[NCAR](https://github.com/NCAR/） .  
 Model development leverages [PyTorch](https://pytorch.org/) and builds upon the CLM framework from [CESM](https://www.cesm.ucar.edu/).
