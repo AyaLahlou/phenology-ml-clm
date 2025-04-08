@@ -29,14 +29,9 @@ Phenology plays a critical role in terrestrial carbon, water, and energy exchang
    pip install -r requirements.txt
    ```
 
-3. Start exploring using the notebooks or run a training script:
-   ```bash
-   python src/model_training.py
-   ```
-
 ## CLM Integration
 
-Integration with CLM is handled through the `fortran/phenology_module.F90` file, where the ML model outputs can be called via F2Py or via offline coupling. See `docs/integration_notes.md` for more information.
+Coming soon.
 
 ## Contributing
 
