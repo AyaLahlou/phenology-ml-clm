@@ -1,4 +1,4 @@
-# Python
+# python
 __pycache__/
 *.py[cod]
 *.ipynb_checkpoints/
@@ -14,3 +14,42 @@ models/
 
 # Jupyter
 .ipynb_checkpoints/
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.nc
+*.parquet
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Compiled output
+*.out
+*.o
+*.exe
+
+# Large files or model checkpoints
+*.h5
+*.pt
+*.ckpt
+
