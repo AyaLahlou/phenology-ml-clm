@@ -6,7 +6,7 @@ __pycache__/
 # Data and Models
 data/
 models/
-
+notebooks/wandb/
 # Environment
 .env
 *.env
