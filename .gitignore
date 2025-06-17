@@ -33,7 +33,8 @@ __pycache__/
 .venv/
 env/
 venv/
-
+.phenoclm/
+external/
 # Logs
 *.log
 
