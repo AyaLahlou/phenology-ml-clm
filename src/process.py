@@ -64,11 +64,17 @@ def tft_process(path, hist_len, fut_len, samp_interval, output_path, test_mode=F
     print(f"Dataset coordinates: {list(ds.coords)}")
     
     # Convert to DataFrame
-    # Flatten spatial dimensions and create location index
     data_df = ds.to_dataframe().reset_index()
     
-    # Create location identifier from lat/lon
-    data_df['location'] = data_df['latitude'].astype(str) + '_' + data_df['longitude'].astype(str)
+    # Handle case where lat/lon might not be present (single location data)
+    if 'latitude' not in data_df.columns and 'longitude' not in data_df.columns:
+        print("No latitude/longitude found. Assuming single location - adding default coordinates.")
+        data_df['latitude'] = 39.32  # USMMS latitude
+        data_df['longitude'] = -86.41  # USMMS longitude
+        data_df['location'] = '1'  # Single location identifier
+    else:
+        # Create location identifier from lat/lon
+        data_df['location'] = data_df['latitude'].astype(str) + '_' + data_df['longitude'].astype(str)
     
     # Standardize column names to match expected format
     column_mapping = {
